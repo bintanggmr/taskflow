@@ -1,0 +1,11 @@
+# Environments
+.env
+.env.local
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS Trash
+Thumbs.db
+.DS_Store
