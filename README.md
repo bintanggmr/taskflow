@@ -8,3 +8,5 @@ TaskFlow adalah aplikasi web manajemen tugas berbasis kolaborasi tim yang diranc
 
 ## Log Perkembangan Proyek:
 - **Hari 6:** Inisialisasi proyek, setup repositori Git, dan pembuatan struktur dasar.
+
+- **Hari 7:** Menentukan tech stack (Java Spring Boot, PostgreSQL, Docker) dan merancang skema database (tabel Users, Projects, Members, Tasks) dalam dokumen `DATABASE.md`.
