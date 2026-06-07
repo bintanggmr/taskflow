@@ -16,3 +16,5 @@ TaskFlow adalah aplikasi web manajemen tugas berbasis kolaborasi tim yang diranc
 - **Hari 9:** Setup database PostgreSQL menggunakan Docker Compose dan mengonfigurasi koneksi database (`application.properties`) di Java Spring Boot.
 
 - **Hari 10:** Membuat representasi objek database pertama (`User` Entity) menggunakan Jakarta Persistence (JPA) untuk pemetaan tabel pengguna otomatis.
+
+- **Hari 11:** Implementasi Data Access Layer dengan membuat `UserRepository` yang mengekstensi `JpaRepository` untuk efisiensi operasi CRUD pada database.

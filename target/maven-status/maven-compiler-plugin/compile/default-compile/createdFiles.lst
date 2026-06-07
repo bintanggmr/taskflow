@@ -1,0 +1,3 @@
+com\taskflow\taskflow\model\User.class
+com\taskflow\taskflow\repository\UserRepository.class
+com\taskflow\taskflow\TaskflowApplication.class
