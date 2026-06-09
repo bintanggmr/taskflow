@@ -20,3 +20,5 @@ TaskFlow adalah aplikasi web manajemen tugas berbasis kolaborasi tim yang diranc
 - **Hari 11:** Implementasi Data Access Layer dengan membuat `UserRepository` yang mengekstensi `JpaRepository` untuk efisiensi operasi CRUD pada database.
 
 - **Hari 12:** Implementasi Service Layer dengan membuat interface `UserService` dan kelas `UserServiceImpl` untuk menangani logika bisnis registrasi pengguna dan validasi email.
+
+- **Hari 13:** Implementasi Controller Layer dengan membuat `UserController` dan mengekspos endpoint API `POST /api/users/register` untuk proses registrasi pengguna.
