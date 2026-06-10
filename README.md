@@ -22,3 +22,32 @@ TaskFlow adalah aplikasi web manajemen tugas berbasis kolaborasi tim yang diranc
 - **Hari 12:** Implementasi Service Layer dengan membuat interface `UserService` dan kelas `UserServiceImpl` untuk menangani logika bisnis registrasi pengguna dan validasi email.
 
 - **Hari 13:** Implementasi Controller Layer dengan membuat `UserController` dan mengekspos endpoint API `POST /api/users/register` untuk proses registrasi pengguna.
+
+- **Hari 14:** Melakukan pengujian end-to-end API Registrasi (Skenario Sukses & Gagal) dan menyusun dokumentasi API kontrak pada file README.md.
+## 🔌 API Documentation (Endpoint Pengujian)
+
+### 1. Registrasi Pengguna Baru
+- **Endpoint:** `POST /api/users/register`
+- **Headers:** `Content-Type: application/json`
+- **Request Body Example:**
+```json
+{
+  "username": "bintangbisa",
+  "email": "bintang@taskflow.com",
+  "password": "password123",
+  "role": "USER"
+}
+
+Response Success (201 Created):
+
+{
+  "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "username": "bintangbisa",
+  "email": "bintang@taskflow.com",
+  "password": "password123",
+  "role": "USER"
+}
+
+Response Fail (400 Bad Request):
+
+Error: Email sudah terdaftar!
