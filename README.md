@@ -51,3 +51,5 @@ Response Success (201 Created):
 Response Fail (400 Bad Request):
 
 Error: Email sudah terdaftar!
+
+- **Hari 15:** Implementasi lapisan keamanan data pertama dengan menerapkan Password Hashing (SHA-256/Base64) pada Service Layer sebelum data disimpan ke database.

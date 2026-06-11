@@ -4,3 +4,4 @@ com\taskflow\taskflow\service\UserService.class
 com\taskflow\taskflow\service\UserServiceImpl.class
 com\taskflow\taskflow\repository\UserRepository.class
 com\taskflow\taskflow\TaskflowApplication.class
+com\taskflow\taskflow\util\PasswordUtil.class
