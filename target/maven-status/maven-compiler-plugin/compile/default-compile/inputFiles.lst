@@ -1,4 +1,5 @@
 C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\controller\UserController.java
+C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\dto\LoginRequest.java
 C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\model\User.java
 C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\repository\UserRepository.java
 C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\service\UserService.java

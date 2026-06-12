@@ -53,3 +53,5 @@ Response Fail (400 Bad Request):
 Error: Email sudah terdaftar!
 
 - **Hari 15:** Implementasi lapisan keamanan data pertama dengan menerapkan Password Hashing (SHA-256/Base64) pada Service Layer sebelum data disimpan ke database.
+
+- **Hari 16:** Membuat Data Transfer Object (`LoginRequest` DTO) dan mengimplementasikan logika bisnis otentikasi login serta verifikasi password hash pada Service Layer.

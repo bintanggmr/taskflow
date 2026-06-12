@@ -1,8 +1,11 @@
 package com.taskflow.taskflow.service;
 
 import com.taskflow.taskflow.model.User;
+import com.taskflow.taskflow.dto.LoginRequest; // Import DTO baru
 
 public interface UserService {
-    // Kontrak fungsi untuk mendaftarkan user baru
     User registerUser(User user);
+    
+    // Kontrak fungsi baru untuk login
+    User loginUser(LoginRequest loginRequest);
 }
