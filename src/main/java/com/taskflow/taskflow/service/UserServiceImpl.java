@@ -4,14 +4,17 @@ import com.taskflow.taskflow.model.User;
 import com.taskflow.taskflow.dto.LoginRequest;
 import com.taskflow.taskflow.repository.UserRepository;
 import com.taskflow.taskflow.util.PasswordUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
+
+    // Buat fungsi konstruktor secara eksplisit
+    public UserServiceImpl(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     @Override
     public User registerUser(User user) {

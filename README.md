@@ -55,3 +55,27 @@ Error: Email sudah terdaftar!
 - **Hari 15:** Implementasi lapisan keamanan data pertama dengan menerapkan Password Hashing (SHA-256/Base64) pada Service Layer sebelum data disimpan ke database.
 
 - **Hari 16:** Membuat Data Transfer Object (`LoginRequest` DTO) dan mengimplementasikan logika bisnis otentikasi login serta verifikasi password hash pada Service Layer.
+
+### 2. Otentikasi Login Pengguna
+- **Endpoint:** `POST /api/users/login`
+- **Headers:** `Content-Type: application/json`
+- **Request Body Example:**
+```json
+{
+  "email": "bintang@taskflow.com",
+  "password": "password123"
+}
+
+Response Success (200 OK):
+
+{
+  "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "username": "bintangbisa",
+  "email": "bintang@taskflow.com",
+  "password": "pmWkWSBCL51B...",
+  "role": "USER"
+}
+
+Response Fail (401 Unauthorized):
+
+Error: Password salah!
