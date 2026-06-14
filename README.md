@@ -79,3 +79,5 @@ Response Success (200 OK):
 Response Fail (401 Unauthorized):
 
 Error: Password salah!
+
+- **Hari 18:** Inisiasi fitur utama manajemen tugas dengan mengimplementasikan entitas `Task` dan memetakan relasi `@ManyToOne` ke entitas `User`.
