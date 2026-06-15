@@ -1,5 +1,6 @@
 com\taskflow\taskflow\model\Task.class
 com\taskflow\taskflow\model\User.class
+com\taskflow\taskflow\repository\TaskRepository.class
 com\taskflow\taskflow\controller\UserController.class
 com\taskflow\taskflow\service\UserService.class
 com\taskflow\taskflow\service\UserServiceImpl.class

@@ -81,3 +81,5 @@ Response Fail (401 Unauthorized):
 Error: Password salah!
 
 - **Hari 18:** Inisiasi fitur utama manajemen tugas dengan mengimplementasikan entitas `Task` dan memetakan relasi `@ManyToOne` ke entitas `User`.
+
+- **Hari 19:** Implementasi Data Access Layer untuk fitur tugas dengan membuat `TaskRepository` dan menambahkan kueri kustom relasional (`findByUserId`).
