@@ -4,6 +4,8 @@ C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\model\Task.java
 C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\model\User.java
 C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\repository\TaskRepository.java
 C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\repository\UserRepository.java
+C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\service\TaskService.java
+C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\service\TaskServiceImpl.java
 C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\service\UserService.java
 C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\service\UserServiceImpl.java
 C:\workspace\taskflow\src\main\java\com\taskflow\taskflow\TaskflowApplication.java
