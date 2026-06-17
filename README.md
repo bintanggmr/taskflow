@@ -85,3 +85,26 @@ Error: Password salah!
 - **Hari 19:** Implementasi Data Access Layer untuk fitur tugas dengan membuat `TaskRepository` dan menambahkan kueri kustom relasional (`findByUserId`).
 
 - **Hari 20:** Implementasi Service Layer untuk fitur tugas dengan membuat interface `TaskService` dan kelas `TaskServiceImpl` untuk menangani logika bisnis pembuatan tugas baru secara relasional.
+
+### 3. Manajemen Tugas (Tasks)
+- **Endpoint:** `POST /api/tasks?userId=UUID_PENGGUNA_DISINI`
+- **Headers:** `Content-Type: application/json`
+- **Request Body Example:**
+```json
+{
+  "title": "Implementasi OIDC Keycloak",
+  "description": "Menyusun konfigurasi identity brokering menggunakan Keycloak dan Docker sesuai standard FAL 1",
+  "dueDate": "2026-06-30T23:59:00"
+}
+
+Response Success (201 Created):
+
+{
+  "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+  "title": "Implementasi OIDC Keycloak",
+  "description": "Menyusun konfigurasi identity brokering menggunakan Keycloak dan Docker sesuai standard FAL 1",
+  "status": "TODO",
+  "dueDate": "2026-06-30T23:59:00"
+}
+
+Hari 21: Implementasi Controller Layer untuk fitur manajemen tugas dengan mengekspos endpoint POST /api/tasks menggunakan kombinasi RequestBody JSON dan RequestParam URL.

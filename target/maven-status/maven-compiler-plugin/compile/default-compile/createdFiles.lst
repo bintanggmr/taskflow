@@ -1,4 +1,5 @@
 com\taskflow\taskflow\model\User.class
+com\taskflow\taskflow\controller\TaskController.class
 com\taskflow\taskflow\controller\UserController.class
 com\taskflow\taskflow\service\UserServiceImpl.class
 com\taskflow\taskflow\dto\LoginRequest.class
