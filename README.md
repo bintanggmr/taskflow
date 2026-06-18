@@ -107,4 +107,20 @@ Response Success (201 Created):
   "dueDate": "2026-06-30T23:59:00"
 }
 
-Hari 21: Implementasi Controller Layer untuk fitur manajemen tugas dengan mengekspos endpoint POST /api/tasks menggunakan kombinasi RequestBody JSON dan RequestParam URL.
+**Hari 21:** Implementasi Controller Layer untuk fitur manajemen tugas dengan mengekspos endpoint POST /api/tasks menggunakan kombinasi RequestBody JSON dan RequestParam URL.
+
+**Response Success (201 Created):**
+
+{
+    "id": "4c9e7439-28af-46d9-8633-ba95d68e42bf",
+    "title": "Eksplorasi Fitur Otentikasi",
+    "description": "Mempelajari integrasi identitas digital berbasis protokol keamanan web standar industri.",
+    "status": "TODO",
+    "dueDate": "2026-06-30T23:59:00",
+}
+
+Response Fail (400 Bad Request):
+
+Error: User tidak ditemukan!
+
+**Hari 22:** Melakukan pengujian end-to-end API Pembuatan Tugas Terrelasi (Skenario Valid & Invalid User ID) dan merampungkan dokumentasi respons pengujian pada README.md.
