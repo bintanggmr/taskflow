@@ -6,6 +6,7 @@ import com.taskflow.taskflow.repository.TaskRepository;
 import com.taskflow.taskflow.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import java.util.UUID;
+import java.util.List;
 
 @Service
 public class TaskServiceImpl implements TaskService {
@@ -37,5 +38,11 @@ public class TaskServiceImpl implements TaskService {
 
         // 4. Simpan data tugas ke PostgreSQL via TaskRepository
         return taskRepository.save(task);
+    }
+
+    // KONTRIBUSI HARI 23: Mengambil semua tugas milik user tertentu berdasarkan ID
+    @Override
+    public List<Task> getTasksByUserId(UUID userId) {
+        return taskRepository.findByUserId(userId);
     }
 }

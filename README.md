@@ -124,3 +124,20 @@ Response Fail (400 Bad Request):
 Error: User tidak ditemukan!
 
 **Hari 22:** Melakukan pengujian end-to-end API Pembuatan Tugas Terrelasi (Skenario Valid & Invalid User ID) dan merampungkan dokumentasi respons pengujian pada README.md.
+
+### 4. Menampilkan Semua Tugas Pengguna
+- **Endpoint:** `GET /api/tasks?userId=UUID_PENGGUNA_DISINI`
+- **Headers:** `Content-Type: application/json`
+- **Response Success (200 OK):**
+```json
+[
+  {
+    "id": "cbd82837-1422-4b6d-a162-82736154bbfa",
+    "title": "Eksplorasi Fitur Otentikasi",
+    "description": "Mempelajari integrasi identitas digital berbasis protokol keamanan web standar industri.",
+    "status": "TODO",
+    "dueDate": "2026-06-30T23:59:00"
+  }
+]
+
+Hari 23: Implementasi fitur Read pada Task Management dengan mengekspos endpoint GET /api/tasks untuk menampilkan daftar tugas spesifik per pengguna.

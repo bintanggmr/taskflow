@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/tasks")
@@ -29,5 +30,11 @@ public class TaskController {
             // Menangkap error jika User ID tidak ditemukan di database (status 400 Bad Request)
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Task>> getTasksByUserId(@RequestParam UUID userId) {
+        List<Task> tasks = taskService.getTasksByUserId(userId);
+        return new ResponseEntity<>(tasks, HttpStatus.OK);
     }
 }
