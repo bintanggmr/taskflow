@@ -141,3 +141,20 @@ Error: User tidak ditemukan!
 ]
 
 Hari 23: Implementasi fitur Read pada Task Management dengan mengekspos endpoint GET /api/tasks untuk menampilkan daftar tugas spesifik per pengguna.
+
+### 5. Menyaring Tugas Berdasarkan Status
+- **Endpoint:** `GET /api/tasks/status?userId=UUID_PENGGUNA_DISINI&status=TODO`
+- **Headers:** `Content-Type: application/json`
+- **Response Success (200 OK):**
+```json
+[
+  {
+    "id": "cbd82837-1422-4b6d-a162-82736154bbfa",
+    "title": "Eksplorasi Fitur Otentikasi",
+    "description": "Mempelajari integrasi identitas digital berbasis protokol keamanan web standar industri.",
+    "status": "TODO",
+    "dueDate": "2026-06-30T23:59:00"
+  }
+]
+
+**Hari 24:** Menyelesaikan fitur pencarian relasional dengan mengekspos endpoint GET /api/tasks/status untuk menyaring tugas pengguna berdasarkan status spesifik.

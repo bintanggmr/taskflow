@@ -6,7 +6,8 @@ import java.util.List;
 
 public interface TaskService {
     Task createTask(Task task, UUID userId);
-    
-    // KONTRIBUSI HARI 23: Kontrak fungsi untuk mengambil semua tugas milik user tertentu
     List<Task> getTasksByUserId(UUID userId);
+    
+    // KONTRIBUSI HARI 24: Kontrak fungsi untuk mengambil tugas berdasarkan ID User dan Status
+    List<Task> getTasksByUserIdAndStatus(UUID userId, String status);
 }

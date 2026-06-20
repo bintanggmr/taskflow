@@ -37,4 +37,13 @@ public class TaskController {
         List<Task> tasks = taskService.getTasksByUserId(userId);
         return new ResponseEntity<>(tasks, HttpStatus.OK);
     }
+
+    // KONTRIBUSI HARI 24: Endpoint untuk mengambil tugas berdasarkan status milik User ID tertentu
+    @GetMapping("/status")
+    public ResponseEntity<List<Task>> getTasksByUserIdAndStatus(
+            @RequestParam UUID userId, 
+            @RequestParam String status) {
+        List<Task> tasks = taskService.getTasksByUserIdAndStatus(userId, status);
+        return new ResponseEntity<>(tasks, HttpStatus.OK);
+    }
 }

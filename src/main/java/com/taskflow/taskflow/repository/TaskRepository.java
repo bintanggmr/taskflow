@@ -7,9 +7,8 @@ import java.util.List;
 
 public interface TaskRepository extends JpaRepository<Task, UUID> {
     
-    // Kueri kustom otomatis untuk mengambil semua tugas milik user tertentu
     List<Task> findByUserId(UUID userId);
     
-    // Kueri kustom otomatis untuk mencari tugas berdasarkan status milik user tertentu
-    List<Task> findByUserIdAndStatus(UUID userId, String status);
+    // UTAMAKAN YANG INI: Tambahkan underscore (_) untuk mempertegas relasi Task -> User -> Id
+    List<Task> findByUser_IdAndStatus(UUID userId, String status);
 }

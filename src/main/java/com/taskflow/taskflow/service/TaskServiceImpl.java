@@ -45,4 +45,11 @@ public class TaskServiceImpl implements TaskService {
     public List<Task> getTasksByUserId(UUID userId) {
         return taskRepository.findByUserId(userId);
     }
+
+    // KONTRIBUSI HARI 24: Implementasi filter tugas berdasarkan status per pengguna
+    @Override
+    public List<Task> getTasksByUserIdAndStatus(UUID userId, String status) {
+        // Sesuaikan nama metodenya dengan menambahkan underscore (_)
+        return taskRepository.findByUser_IdAndStatus(userId, status);
+    }
 }
